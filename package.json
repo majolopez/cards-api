@@ -1,14 +1,14 @@
 {
-  "name": "habits-api",
+  "name": "cards-api",
   "version": "1.0.0",
+  "engines": {
+    "node": ">=16.13.2"
+  },
   "description": "",
   "main": "index.js",
   "scripts": {
     "start": "node server",
-    "server": "nodemon server.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "buildrun": "npm run build && npm run server",
-    "build": "echo Building Addon && cd addon && node-gyp build"
+    "server": "nodemon server.js"
   },
   "keywords": [],
   "author": "",
