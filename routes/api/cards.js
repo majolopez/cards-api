@@ -30,7 +30,7 @@ router.get('/:categoryId',
 //@desc   Get all cards
 //@access Private
 router.get('/',
-async (req, res) => {
+async (req, res) => { d
   try {
 
    const text = req.query.q;
