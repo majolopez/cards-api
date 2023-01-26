@@ -18,7 +18,7 @@ router.get('/',
 
     const categories = text === undefined  ?  await Category.find({}) : 
     await Category.find({ name: { $regex: text } });
-    console.log(categories)
+
     res.set('Access-Control-Allow-Origin', process.env.UIURL);
     res.json(categories);
 

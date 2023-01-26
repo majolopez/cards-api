@@ -15,11 +15,12 @@ router.get('/:categoryId',
    try {
 
     category = req.params.categoryId
-    console.log(category)
+
     cards = await Card.find({ category:  category  }).populate("category");
-    console.log(process.env.UIURL)
+
     res.set('Access-Control-Allow-Origin', process.env.UIURL);
     res.json(cards);
+    
    } catch (error) {
     console.error(error.message);
     res.status(500).send('server error');
