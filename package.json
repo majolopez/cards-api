@@ -6,7 +6,9 @@
   "scripts": {
     "start": "node server",
     "server": "nodemon server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "buildrun": "npm run build && npm run server",
+    "build": "echo Building Addon && cd addon && node-gyp build"
   },
   "keywords": [],
   "author": "",
