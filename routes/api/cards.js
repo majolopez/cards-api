@@ -31,7 +31,7 @@ router.get('/:categoryId',
 //@desc   Get all cards
 //@access Private
 router.get('/',
-async (req, res) => { d
+async (req, res) => { 
   try {
 
    const text = req.query.q;
@@ -85,7 +85,7 @@ async (req, res) => {
         });
 
         await card.save();
-
+        res.set('Access-Control-Allow-Origin', process.env.UIURL);
         return res.json(card);
 
     } catch (error) {
