@@ -57,7 +57,8 @@ async (req, res) => {
         });
 
         await category.save();
-
+        
+        res.set('Access-Control-Allow-Origin', process.env.UIURL);
         return res.json(category);
 
     } catch (error) {
