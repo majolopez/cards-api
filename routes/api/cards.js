@@ -13,7 +13,7 @@ const { check, validationResult } = require('express-validator');
 router.get('/:categoryId',
  async (req, res) => {
    try {
-
+    
     category = req.params.categoryId
 
     cards = await Card.find({ category:  category  }).populate("category");
