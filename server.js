@@ -7,6 +7,7 @@ var cors = require('cors')
 const app = express()
 console.log("express")
 dotenv.config();
+
 connectDB(process.env.MONGOURI);
 app.use(cors(process.env.UIURL))
 

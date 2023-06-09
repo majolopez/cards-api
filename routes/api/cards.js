@@ -5,8 +5,6 @@ const Card = require('../../models/Card');
 const Category = require('../../models/Category');
 const { check, validationResult } = require('express-validator');
 
-
-
 //@route  GET api/cards
 //@desc   Get all cards
 //@access Private
