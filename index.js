@@ -9,7 +9,7 @@ console.log("express")
 dotenv.config();
 
 connectDB(process.env.MONGOURI);
-app.use(cors(process.env.UIURL))
+app.use(cors({ origin: process.env.UIURL}))
 
 //Init Middleware
 app.use(express.json({ extended: false}))
