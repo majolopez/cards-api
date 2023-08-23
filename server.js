@@ -25,5 +25,5 @@ app.get('/', (req, res) => res.json({msg:'Welcome to the habits app..'}));
 app.use('/api/cards', require('./routes/api/cards'));
 app.use('/api/categories', require('./routes/api/categories'));
 
-const PORT = process.env.PORT || 49161;
+const PORT = process.env.PORT || 49160;
 app.listen(PORT , () => `Server started on port ${PORT}`);
